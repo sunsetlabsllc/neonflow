@@ -1,13 +1,14 @@
 :root {
-  --bg: #fafafa;
-  --surface: #ffffff;
-  --text: #0f172a;
-  --text-muted: #64748b;
-  --border: #e5e7eb;
-  --border-hover: #cbd5e1;
-  --accent: #2563eb;
-  --shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-hover: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --bg: #1a1a1a;
+  --surface: #212121;
+  --text: #f5f5f5;
+  --text-muted: #8b8b93;
+  --border: #2a2a2e;
+  --border-hover: #6457f5;
+  --accent: #6457f5;
+  --accent-soft: rgba(100, 87, 245, 0.12);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -24,6 +25,8 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: var(--bg);
+  background-image: radial-gradient(60rem 30rem at 50% -10rem, var(--accent-soft), transparent 70%);
+  background-repeat: no-repeat;
   color: var(--text);
   line-height: 1.5;
   min-height: 100vh;
@@ -46,11 +49,28 @@ body {
 }
 
 .wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: 'Oxanium', 'Inter', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: var(--text);
-  margin-bottom: 0.5rem;
+}
+
+.logo-accent {
+  color: var(--accent);
 }
 
 .tagline {
@@ -86,11 +106,16 @@ body {
   transform: translateY(-1px);
 }
 
+.card:hover .card-title {
+  color: var(--accent);
+}
+
 .card-title {
   font-size: 1.0625rem;
   font-weight: 600;
   color: var(--text);
   margin-bottom: 0.25rem;
+  transition: color 180ms ease;
 }
 
 .card-desc {
@@ -126,6 +151,10 @@ body {
   transform: none;
 }
 
+.card-placeholder:hover .card-title {
+  color: var(--text-muted);
+}
+
 .card-placeholder .card-title {
   color: var(--text-muted);
   font-weight: 500;
@@ -157,19 +186,5 @@ body {
 
   .card-arrow {
     right: 1.5rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0a0a0a;
-    --surface: #111113;
-    --text: #f5f5f5;
-    --text-muted: #8b8b93;
-    --border: #1f1f23;
-    --border-hover: #2e2e35;
-    --accent: #60a5fa;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4);
   }
 }
