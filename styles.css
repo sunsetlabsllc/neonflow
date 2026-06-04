@@ -167,6 +167,104 @@ body {
   color: var(--text-muted);
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+/* Legal pages (terms, privacy) */
+.legal .hero {
+  margin-bottom: 2.5rem;
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.home-link .logo-text {
+  font-size: 1.5rem;
+}
+
+.home-link .logo-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.legal-title {
+  font-family: 'Oxanium', 'Inter', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.legal-meta {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.prose {
+  margin-bottom: 4rem;
+}
+
+.prose h2 {
+  font-family: 'Oxanium', 'Inter', sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.75rem;
+  color: var(--text);
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose p,
+.prose li {
+  font-size: 0.9375rem;
+  color: #c8c8cf;
+  margin-bottom: 0.875rem;
+}
+
+.prose ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0.875rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+}
+
+.prose strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 @media (max-width: 560px) {
   .container {
     padding: 4rem 1.25rem 1.5rem;
