@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Neonflow</title>
-  <meta name="description" content="Neonflow — building useful software." />
+  <meta name="description" content="Neonflow is an independent software studio building small, focused apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Neonflow" />
+  <meta property="og:description" content="An independent software studio building small, focused apps." />
+  <meta property="og:url" content="https://neonflow.co/" />
+  <meta property="og:image" content="https://neonflow.co/assets/web-app-manifest-512x512.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#1a1a1a" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -16,62 +23,103 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Neonflow" />
   <link rel="manifest" href="/assets/site.webmanifest" />
-
 </head>
 <body>
   <main class="container">
     <header class="hero">
-      <h1 class="wordmark">
+      <div class="wordmark">
         <img class="logo-icon" src="assets/icon.svg" alt="" aria-hidden="true" />
         <span class="logo-text">Neon<span class="logo-accent">flow</span></span>
-      </h1>
-      <p class="tagline">Building useful software.</p>
+      </div>
+      <p class="eyebrow">Independent software studio</p>
+      <h1 class="headline">Small, focused software.</h1>
+      <p class="tagline">We build apps for people who'd rather get on with their day. Each one does a single job, and does it well.</p>
     </header>
 
-    <section class="apps" aria-label="Our apps">
-      <a class="card" href="https://midweek.app" target="_blank" rel="noopener noreferrer">
-        <h2 class="card-title">Midweek</h2>
-        <p class="card-desc">Small business marketing, simplified.</p>
-        <span class="card-arrow" aria-hidden="true">→</span>
-      </a>
+    <section class="apps-section" aria-labelledby="apps-heading">
+      <div class="section-head">
+        <h2 id="apps-heading" class="section-title">Apps</h2>
+        <span class="count" aria-label="5 apps">5</span>
+      </div>
 
-      <a class="card" href="https://blockout.day/" target="_blank" rel="noopener noreferrer">
-        <h2 class="card-title">Blockout</h2>
-        <p class="card-desc">Block out your day across every calendar</p>
-        <span class="card-arrow" aria-hidden="true">→</span>
-      </a>
+      <div class="apps">
+        <a class="card" href="https://midweek.app" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon" data-initial="M"><img src="assets/apps/midweek.svg" alt="" onerror="this.remove()" /></span>
+          <span class="card-arrow" aria-hidden="true">→</span>
+          <h3 class="card-title">Midweek</h3>
+          <p class="card-desc">Small business marketing, simplified.</p>
+          <div class="card-meta">
+            <span class="tag">Marketing</span>
+            <span class="pill" data-status="live">Live</span>
+          </div>
+        </a>
 
-      <a class="card" href="https://rumlineapp.com" target="_blank" rel="noopener noreferrer">
-        <h2 class="card-title">Rumline</h2>
-        <p class="card-desc">A workspace for the solo contractor.</p>
-        <span class="card-arrow" aria-hidden="true">→</span>
-      </a>
+        <a class="card" href="https://blockout.day/" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon" data-initial="B"><img src="assets/apps/blockout.svg" alt="" onerror="this.remove()" /></span>
+          <span class="card-arrow" aria-hidden="true">→</span>
+          <h3 class="card-title">Blockout</h3>
+          <p class="card-desc">Block out your day across every calendar.</p>
+          <div class="card-meta">
+            <span class="tag">Calendar</span>
+            <span class="pill" data-status="beta">Beta</span>
+          </div>
+        </a>
 
-      <a class="card" href="https://pocketgo.app" target="_blank" rel="noopener noreferrer">
-        <h2 class="card-title">Pocket Go</h2>
-        <p class="card-desc">A calm place to play Go.</p>
-        <span class="card-arrow" aria-hidden="true">→</span>
-      </a>       
+        <a class="card" href="https://rumlineapp.com" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon" data-initial="R"><img src="assets/apps/rumline.svg" alt="" onerror="this.remove()" /></span>
+          <span class="card-arrow" aria-hidden="true">→</span>
+          <h3 class="card-title">Rumline</h3>
+          <p class="card-desc">A workspace for the solo contractor.</p>
+          <div class="card-meta">
+            <span class="tag">Workspace</span>
+            <span class="pill" data-status="live">Live</span>
+          </div>
+        </a>
 
-      <a class="card" href="https://rivvot.com" target="_blank" rel="noopener noreferrer">
-        <h2 class="card-title">Rivvot</h2>
-        <p class="card-desc">AI Form builder as a service.</p>
-        <span class="card-arrow" aria-hidden="true">→</span>
-      </a>
+        <a class="card" href="https://pocketgo.app" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon" data-initial="P"><img src="assets/apps/pocket-go.svg" alt="" onerror="this.remove()" /></span>
+          <span class="card-arrow" aria-hidden="true">→</span>
+          <h3 class="card-title">Pocket Go</h3>
+          <p class="card-desc">A calm place to play Go.</p>
+          <div class="card-meta">
+            <span class="tag">Game</span>
+            <span class="pill" data-status="live">Live</span>
+          </div>
+        </a>
 
-      <div class="card card-placeholder" aria-disabled="true">
-        <h2 class="card-title">More coming soon</h2>
-        <p class="card-desc">We're just getting started.</p>
+        <a class="card" href="https://rivvot.com" target="_blank" rel="noopener noreferrer">
+          <span class="app-icon" data-initial="R"><img src="assets/apps/rivvot.svg" alt="" onerror="this.remove()" /></span>
+          <span class="card-arrow" aria-hidden="true">→</span>
+          <h3 class="card-title">Rivvot</h3>
+          <p class="card-desc">AI form builder as a service.</p>
+          <div class="card-meta">
+            <span class="tag">Forms</span>
+            <span class="pill" data-status="beta">Beta</span>
+          </div>
+        </a>
+
+        <div class="card card-placeholder" aria-disabled="true">
+          <span class="app-icon app-icon-empty" aria-hidden="true">+</span>
+          <h3 class="card-title">More coming soon</h3>
+          <p class="card-desc">We're just getting started.</p>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <nav class="footer-links" aria-label="Footer">
-        <a href="https://portal.neonflow.co">Looking for a license?</a>
-        <a href="/terms/">Terms</a>
-        <a href="/privacy/">Privacy</a>
-      </nav>
-      <p>&copy; 2026 Neonflow. All rights reserved. Neonflow is a subsidiary of 77LNS&nbsp;LLC.</p>
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <span class="logo-text logo-text-sm">Neon<span class="logo-accent">flow</span></span>
+          <p>Thoughtful tools, built independently.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer">
+          <h4 class="footer-heading">Links</h4>
+          <a href="https://portal.neonflow.co">License portal</a>
+          <a href="/terms/">Terms</a>
+          <a href="/privacy/">Privacy</a>
+        </nav>
+      </div>
+      <p class="footer-legal">&copy; 2026 Neonflow. All rights reserved. Neonflow is a subsidiary of 77LNS&nbsp;LLC.</p>
     </footer>
   </main>
 </body>
